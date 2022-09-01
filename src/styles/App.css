@@ -1,0 +1,8 @@
+#root {
+  background-color: #ececec;
+}
+
+.banner,
+main {
+  min-width: 1100px;
+}
