@@ -29,9 +29,11 @@ function App() {
 
   const handleSubmit = (values) => {
     setPersonalDetails(values.personalDetails);
-    setSkillHighlights(values.skillHighlights);
-    setExperiences(values.experiences);
-    setEducations(values.educations);
+    setSkillHighlights(
+      values.skillHighlights.filter((skill, index) => index < skillHighlights.length)
+    );
+    setExperiences(values.experiences.filter((exp, index) => index < experiences.length));
+    setEducations(values.educations.filter((educ, index) => index < educations.length));
 
     setIsPrintCV(true);
   };
