@@ -8,9 +8,10 @@
 
 /* DETAILS */
 .CVOutput .details {
-  min-width: 35%;
+  width: 35%;
   padding: 2rem 1.5rem;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   background-color: #082540;
 }
@@ -86,8 +87,9 @@
 
 .info .summary {
   margin: 0 0.25rem;
-  font-size: 1.1rem;
+  font-size: 1.075rem;
   text-align: justify;
+  line-height: 1.5rem;
 }
 
 .info ul {
